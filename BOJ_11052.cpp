@@ -20,7 +20,7 @@ void solution() {
 	for (int i = 1; i <= n; i++) {
 		for (int j = 1; j <= i; j++) {
 			dp[i] = max(dp[i], dp[i - j] + card[j]);
-			cout<<i<<"  dp[i]: "<<dp[i]<<" dp[i - j] + card[j]: "<<dp[i - j] + card[j]<<endl; 
+			cout<<"i: "<<i<<" i-j: "<<i-j<<" j: "<<j<<"  dp[i]: "<<dp[i]<<" dp[i - j] + card[j]: "<<dp[i - j] + card[j]<<endl; 
 		}
 		cout<<endl;
 	}
